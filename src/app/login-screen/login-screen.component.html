@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="form-container">
+    <h2 class="title arial">Login</h2>
+    <form (ngSubmit)="login()">
+      <div class="row">
+        <div class="col-3 d-flex align-items-center">
+          <label for="username" class="arial">Username</label>
+        </div>
+        <div class="col-9">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            [(ngModel)]="userDetails.username"
+            placeholder="Username"
+            class="arial"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 d-flex align-items-center">
+          <label for="password" class="arial">Password</label>
+        </div>
+        <div class="col-9">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            [(ngModel)]="userDetails.password"
+            placeholder="Password"
+            class="arial"
+          />
+        </div>
+      </div>
+      <button type="submit" class="arial">LOGIN</button>
+    </form>
+    <div class="login-message">
+      Didn't have an account?
+      <a class="router-link" routerLink="/">Register</a> here.
+    </div>
+  </div>
+</div>

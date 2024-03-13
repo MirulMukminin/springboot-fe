@@ -1,0 +1,44 @@
+/* Container styles */
+.container {
+  display: flex; /* Make container a flexbox */
+  position: relative; /* Enable absolute positioning for child elements */
+}
+
+/* h1 styles */
+h1 {
+  position: absolute; /* Make h1 absolutely positioned */
+  top: 20%; /* Position it at the top */
+  left: 0; /* Position it at the left */
+  width: 100%; /* Set width to 100% of container */
+  text-align: center; /* Center align text */
+}
+
+/* Left and right side styles (optional) */
+
+.right-side {
+  flex: 1; /* Make both sides take up equal space */
+  height: 100vh; /* Set a height for demonstration */
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+.left-side {
+  flex: 1; /* Make both sides take up equal space */
+  height: 100vh; /* Set a height for demonstration */
+  background-color: white; /* Optional background color */
+}
+
+.logout-button {
+  margin-top: 2rem;
+  margin-right: 3rem;
+  float: right;
+  padding: 15px;
+  width: 8rem;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.logout-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

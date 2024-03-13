@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="form-container">
+    <h2 class="title arial">Register</h2>
+    <form (ngSubmit)="register()">
+      <div class="row">
+        <div class="col-3 d-flex align-items-center">
+          <label for="fname" class="arial">Full Name</label>
+        </div>
+        <div class="col-9">
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Full Name"
+            class="arial"
+            [(ngModel)]="userDetails.fname"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 d-flex align-items-center">
+          <label for="username" class="arial">Username</label>
+        </div>
+        <div class="col-9">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            [(ngModel)]="userDetails.username"
+            placeholder="Username"
+            class="arial"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 d-flex align-items-center">
+          <label for="email" class="arial">Email</label>
+        </div>
+        <div class="col-9">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            [(ngModel)]="userDetails.email"
+            placeholder="Email"
+            class="arial"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 d-flex align-items-center">
+          <label for="password" class="arial">Password</label>
+        </div>
+        <div class="col-9">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            [(ngModel)]="userDetails.password"
+            placeholder="Password"
+            class="arial"
+          />
+        </div>
+      </div>
+      <button type="submit" class="arial">SUBMIT</button>
+    </form>
+    <div class="login-message">
+      Already have an account?
+      <a class="router-link" routerLink="/login">Login</a> here.
+    </div>
+  </div>
+</div>
