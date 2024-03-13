@@ -20,7 +20,7 @@ export class LoginScreenComponent {
   };
   login() {
     console.log(this.userDetails);
-
+    this.router.navigate(['home']);
     // this.http
     //   .post(this.userService.usersUrl + 'login', this.userDetails)
     //   .subscribe({

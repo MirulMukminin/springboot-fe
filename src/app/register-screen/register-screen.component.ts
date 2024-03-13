@@ -22,7 +22,7 @@ export class RegisterScreenComponent {
   };
   register() {
     console.log(this.userDetails);
-
+    this.router.navigate(['login']);
     // this.http
     //   .post(this.userService.usersUrl + 'register', this.userDetails)
     //   .subscribe({
