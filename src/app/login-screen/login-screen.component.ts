@@ -21,6 +21,10 @@ export class LoginScreenComponent {
   login() {
     console.log(this.userDetails);
     this.router.navigate(['home']);
+    // this.userService.showToaster({
+    //   type: 'success',
+    //   title: 'Login Success',
+    // });
     // this.http
     //   .post(this.userService.usersUrl + 'login', this.userDetails)
     //   .subscribe({

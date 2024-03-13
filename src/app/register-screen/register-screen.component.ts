@@ -23,6 +23,10 @@ export class RegisterScreenComponent {
   register() {
     console.log(this.userDetails);
     this.router.navigate(['login']);
+    // this.userService.showToaster({
+    //   type: 'success',
+    //   title: 'Registration Success',
+    // });
     // this.http
     //   .post(this.userService.usersUrl + 'register', this.userDetails)
     //   .subscribe({
